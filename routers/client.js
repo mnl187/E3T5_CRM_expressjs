@@ -1,11 +1,14 @@
 const express = require('express');
+const {db} = require("../utils/db");
 
 const clientRouter = express.Router();
 
 clientRouter
 
     .get('/', (req, res) => {
-        res.send('Pobierz wszystkie!');
+        res.render('client/list-all', {
+            clients: db.getAll(),
+        });
     })
 
 
