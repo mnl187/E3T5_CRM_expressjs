@@ -5,9 +5,24 @@ const clientRouter = express.Router();
 clientRouter
 
     .get('/', (req, res) => {
-        res.send('Działa!');
+        res.send('Pobierz wszystkie!');
     })
 
+
+    .get('/:id', (req, res) => {
+        res.send('Pobierz pojedynczego!');
+    })
+
+    .post('/', (req, res) => {
+        res.send('Dodaj!');
+    })
+
+    .put('/:id', (req, res) => {
+        res.send('Zmodyfikuj!');
+    })
+    .delete('/:id', (req, res) => {
+        res.send('Usuń!');
+    })
 
 module.exports = {
     clientRouter,

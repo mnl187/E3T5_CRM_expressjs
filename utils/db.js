@@ -15,16 +15,25 @@ class Db {
 
     }
 
+    _save() {
+        writeFile(this.dbFileName, JSON.stringify(this._data), 'utf8');
+
+    }
+
     create(obj) {
         this._data.push({
             id: uuid(),
             ...obj,
         });
-        writeFile(this.dbFileName, JSON.stringify(this._data), 'utf8');
+        this._save();
     }
 
     getAll() {
         return this._data;
+    }
+
+    getOne(id) {
+        return this._data.find(oneObj => oneObj.id !== id);
     }
 
     update(id, newObj) {
@@ -38,7 +47,13 @@ class Db {
                 return oneObj;
             }
         });
-        writeFile(this.dbFileName, JSON.stringify(this._data), 'utf8');
+        this._save();
+    }
+
+    delete(id) {
+        this._data = this._data.filter(oneObj => oneObj.id !== id);
+        this._save(); //debounce
+
     }
 }
 
