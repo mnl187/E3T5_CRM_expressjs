@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('express-handlebars');
 const {clientRouter} = require("./routers/client");
 const {homeRouter} = require("./routers/home");
+const {db} = require('./utils/db');
 
 const app = express();
 
@@ -10,14 +11,21 @@ app.use(express.urlencoded({
 }));
 app.use(express.static('public'));
 app.use(express.json());
-app.engine('.hbs', hbs.engine( {
+app.engine('.hbs', hbs.engine({
     extname: '.hbs',
     // helpers: handlebarsHelpers,
 }));
 app.set('view engine', '.hbs');
 
-app.use('/', homeRouter)
-app.use('/client', clientRouter)
+app.use('/', homeRouter);
+app.use('/client', clientRouter);
+app.get('/test', (req, res) => {
+    db.create({
+        name: "Test123",
+        mail: "a@b.c",
+    })
+    res.send('ok');
+});
 
 app.listen(3000, 'localhost', () => {
     console.log('Listening on http://localhost:3000')
