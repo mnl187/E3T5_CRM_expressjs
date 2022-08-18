@@ -11,7 +11,6 @@ clientRouter
         });
     })
 
-
     .get('/:id', (req, res) => {
         res.send('Pobierz pojedynczego!');
     })

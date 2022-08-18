@@ -1,4 +1,14 @@
 [{
+  "id": "7421bbd7-5bba-4f74-924d-fadea57da497",
   "name": "assam",
-  "age": "2000"
+  "mail": "a@b.c",
+  "notes": "",
+  "nextContactAt": "Wczoraj"
+},
+  {
+  "id": "5035be48-fd09-4495-9eda-d99d7e21e0b8",
+  "name": "Johnny",
+  "mail": "y@x.z",
+  "notes": "",
+  "nextContactAt": "Jutro"
 }]

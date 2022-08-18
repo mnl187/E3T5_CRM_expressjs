@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    text-align: left;
+}
+thead tr {
+    background-color: #b0b0b0;
+}
+
+tr {
+    margin: 2px;
+    background-color: #d2d2d2;
+}
+th, td {
+    padding: 4px;
+}
