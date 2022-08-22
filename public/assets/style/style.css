@@ -8,6 +8,8 @@ tr {
 }
 table {
     text-align: left;
+    width: 60%;
+    margin: 0 auto;
 }
 
 tr:nth-child(2n) {
@@ -18,4 +20,7 @@ thead tr, .header-of-left th {
 }
 th, td, h2 {
     padding: 10px;
+}
+button {
+    cursor: pointer;
 }
