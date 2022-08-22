@@ -1,14 +1,30 @@
-[{
-  "id": "7421bbd7-5bba-4f74-924d-fadea57da497",
-  "name": "assam",
-  "mail": "a@b.c",
-  "notes": "",
-  "nextContactAt": "Wczoraj"
-},
+[
   {
-  "id": "5035be48-fd09-4495-9eda-d99d7e21e0b8",
-  "name": "Johnny",
-  "mail": "y@x.z",
-  "notes": "",
-  "nextContactAt": "Jutro"
-}]
+    "id": "6993b77a-a293-4328-8990",
+    "name": "Darek",
+    "mail": "dariusz@example.com",
+    "nextContactAt": "Pojutrze",
+    "notes": "Zadzwonić jutro"
+  },
+  {
+    "id": "6993b77a-a293",
+    "name": "Kaja",
+    "mail": "kaja@example.com",
+    "nextContactAt": "W grudniu",
+    "notes": "Zadzwonić 30.11.2021"
+  },
+  {
+    "id": "41af8166-7d7a-4b87-b453-dd12c797f8c7",
+    "mail": "loki@example.com",
+    "name": "Loki",
+    "nextContactAt": "2021-11-10",
+    "notes": "Nie wiem o co chodzi"
+  },
+  {
+    "id": "a6bf1340-eecd-4aae-8fba-4dc354059f64",
+    "mail": "cookiemonster@example.com",
+    "name": "CookieMonster",
+    "nextContactAt": "2021-12-20",
+    "notes": "Klient chce coraz więcej ciastek"
+  }
+]
