@@ -4,18 +4,18 @@
 }
 tr {
     margin: 2px;
-    background-color: #d2d2d2;
+    background-color: rgba(210, 210, 210, 0.5);
 }
 table {
     text-align: left;
 }
-thead tr {
+
+tr:nth-child(2n) {
+    background-color: rgba(218, 218, 218, 0.83)
+}
+thead tr, .header-of-left th {
     background-color: rgba(176, 176, 176, 0.84);
 }
-thead tr:nth-child(2n) {
-    background-color: rgba(218, 218, 218, 0.35)
-}
-
-th, td {
-    padding: 6px;
+th, td, h2 {
+    padding: 10px;
 }

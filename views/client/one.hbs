@@ -1,35 +1,40 @@
 <h2>{{client.name}}</h2>
-<table>
-    <thead>
+<table class="header-of-left">
+    <tbody>
     <tr>
         <th>
             Email
         </th>
+        <td>
+            <a href="mailto:{{client.mail}}" target="_blank">{{client.mail}}</a>
+        </td>
+    </tr>
+    <tr>
         <th>
             Imię
         </th>
+        <td>
+            {{client.name}}
+        </td>
+    </tr>
+    <tr>
         <th>
             Data następnego kontaktu
         </th>
-        <th></th>
+        <td>
+            {{client.nextContactAt}}
+        </td>
     </tr>
-    </thead>
-    <tbody>
-    {{#each clients}}
+    {{#if client.notes}}
         <tr>
             <th>
-                <a href="mailto:{{this.mail}}" target="_blank">{{this.mail}}</a>
+                Notatki
             </th>
             <td>
-                <a href="/client{{this.name}}">{{this.name}}</a>
-            </td>
-            <td>
-                {{this.nextContactAt}}
-            </td>
-            <td>
-                <a href="/client/{{this.id}}">Szczegóły</a>
+                {{client.notes}}
             </td>
         </tr>
-    {{/each}}
+    {{/if}}
+
     </tbody>
 </table>
