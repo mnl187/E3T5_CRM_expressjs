@@ -18,7 +18,7 @@ tr:nth-child(2n) {
 thead tr, .header-of-left th {
     background-color: rgba(176, 176, 176, 0.84);
 }
-th, td, h2 {
+th, td, h2, p {
     padding: 10px;
 }
 button {

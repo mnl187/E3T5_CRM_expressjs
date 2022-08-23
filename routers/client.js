@@ -28,7 +28,9 @@ clientRouter
         db.delete(req.params.id);
         res.render('client/deleted')
     })
-
+    .get('/form/add', (req, res) => {
+        res.render('client/forms/add');
+    })
 
 module.exports = {
     clientRouter,
