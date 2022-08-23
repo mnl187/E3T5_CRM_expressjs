@@ -18,7 +18,11 @@ clientRouter
     })
 
     .post('/', (req, res) => {
-        res.send('Dodaj!');
+        const id = db.create(req.body);
+        res.render('client/added', {
+            name: req.body.name,
+            id,
+        });
     })
 
     .put('/:id', (req, res) => {
