@@ -1,16 +1,1 @@
-[
-  {
-    "id": "a6bf1340-eecd-4aae-8fba-4dc354059f64",
-    "mail": "cookiemonster@example.com",
-    "name": "CookieMonster",
-    "nextContactAt": "2021-12-20",
-    "notes": "Klient chce coraz więcej ciastek"
-  },
-  {
-    "id": "24ee0ad2-d81e-4706-bd67-808a378ea6fe",
-    "mail": "testow@przyklad.pl",
-    "name": "Testowy",
-    "nextContactAt": "2022-08-31",
-    "notes": "Dzwon szybko"
-  }
-]
+[{"id":"a6bf1340-eecd-4aae-8fba-4dc354059f64","mail":"cookiemonster@example.com","name":"CookieMonster","nextContactAt":"2021-12-20","notes":"Klient chce coraz więcej ciastek."},{"id":"24ee0ad2-d81e-4706-bd67-808a378ea6fe","mail":"testow@przyklad.pl","name":"Testowy","nextContactAt":"2022-08-31","notes":"Dzwon szybko"}]

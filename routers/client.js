@@ -25,9 +25,6 @@ clientRouter
         });
     })
 
-    .put('/:id', (req, res) => {
-        res.send('Zmodyfikuj!');
-    })
     .delete('/:id', (req, res) => {
         db.delete(req.params.id);
         res.render('client/deleted')
@@ -45,6 +42,8 @@ clientRouter
         db.update(req.params.id, req.body);
         res.render('client/modified', {
             name: req.body.name,
+            id: req.params.id,
+        });
     })
 
 module.exports = {
