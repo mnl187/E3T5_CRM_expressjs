@@ -3,10 +3,10 @@
     <thead>
     <tr>
         <th>
-            Email
+            Imię
         </th>
         <th>
-            Imię
+            Email
         </th>
         <th>
             Data następnego kontaktu
@@ -17,12 +17,12 @@
     <tbody>
     {{#each clients}}
         <tr>
+            <td>
+                <a href="/client/{{this.id}}">{{this.name}}</a>
+            </td>
             <th>
                 <a href="mailto:{{this.mail}}" target="_blank">{{this.mail}}</a>
             </th>
-            <td>
-                <a href="/client{{this.name}}">{{this.name}}</a>
-            </td>
             <td>
                 {{this.nextContactAt}}
             </td>

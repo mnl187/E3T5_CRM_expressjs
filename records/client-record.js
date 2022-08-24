@@ -23,11 +23,11 @@ class ClientRecord {
         if (typeof notes !== 'string') {
             throw new ValidationError('Data następnego kontaktu musi być tekstem');
         }
-
-        this.name = name;
-        this.mail = mail;
-        this.nextContactAt = nextContactAt;
-        this.notes = notes;
+        this.id = obj.id;
+        this.name = obj.name;
+        this.mail = obj.mail;
+        this.nextContactAt = obj.nextContactAt;
+        this.notes = obj.notes;
     }
 }
 
