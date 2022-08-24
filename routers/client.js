@@ -19,6 +19,7 @@ clientRouter
 
     .post('/', (req, res) => {
         const id = db.create(req.body);
+
         res.render('client/added', {
             name: req.body.name,
             id,
