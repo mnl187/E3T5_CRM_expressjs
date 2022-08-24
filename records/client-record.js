@@ -1,4 +1,4 @@
-class Client {
+class ClientRecord {
     constructor(obj) {
         this.name = obj.name;
         this.mail = obj.mail;
@@ -8,5 +8,5 @@ class Client {
 }
 
 module.exports = {
-    Client,
+    ClientRecord,
 }

@@ -12,7 +12,7 @@ clientRouter
     })
 
     .get('/:id', (req, res) => {
-        res.render('client/one', {
+          res.render('client/one', {
             client: db.getOne(req.params.id),
         });
     })
